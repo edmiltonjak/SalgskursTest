@@ -689,7 +689,7 @@ p,.ch-text,.ch-lead,.phase-summary,.bubble,.quote-block,.ch-quote,.intro-sub,.co
       <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Er det viktig for deg å ha en forsikring du faktisk kan stole på?</li>
       <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Vil du ha full oversikt over hva du er dekket for?</li>
       <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Er det fornuftig å spare penger hvis du får minst like god dekning?</li>
-      <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Er du åpen for å høre hva vi kan tilby deg?</li>
+      <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Du ringer om bilforsikring, men er det greit at jeg også ser på om vi kan gjøre noe med resten?</li>
     </ul>
   </div>
 
@@ -741,7 +741,7 @@ p,.ch-text,.ch-lead,.phase-summary,.bubble,.quote-block,.ch-quote,.intro-sub,.co
       <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Du har vel ikke noe imot å spare penger?</li>
       <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Du er vel ikke fornøyd med å betale for mye?</li>
       <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Jeg antar at du ikke vil ha en forsikring du ikke forstår?</li>
-      <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Du har vel ikke noe imot å høre hva vi kan tilby?</li>
+      <li style="display:flex;gap:8px;font-size:13px;color:var(--muted);line-height:1.6"><span style="color:#3D3D3D;font-weight:600;flex-shrink:0">›</span>Du har vel ikke noe imot at jeg ser over resten av forsikringene dine også, mens vi er i gang?</li>
     </ul>
   </div>
 
@@ -974,7 +974,7 @@ function showPage(id, btn) {
 /* ════════════════════════════════════════════════════════ */
 const phases = [
   {num:"01",name:"Sannhetens øyeblikk",tag:"Åpningen · Kontaktfasen",color:"#0E654F",bg:"rgba(13,178,138,.12)",
-    summary:"Etter å ha studert mange samtaler og ulike salgsmetoder, er konklusjonen min klar: de første 4 sekundene bestemmer alt. Hjernen danner et førsteinntrykk i løpet av millisekunder, og det er nesten umulig å endre etterpå.",
+    summary:"Når kunden ringer oss, har de allerede tatt initiativet. Jobben i åpningen er ikke å fange interesse, men å ta over ledelsen: vise at ærendet er i gode hender, og lede samtalen videre. Førsteinntrykket dannes likevel raskt, og det er vanskelig å endre etterpå.",
     psy:[
       {icon:"⚡",title:"Thin-slicing",desc:"Hjernen tar beslutninger på mikrosekunder basert på minimale signaler. Kroppsspråk og toneleie er de første filtrene, lenge før ordene dine registreres."},
       {icon:"🪞",title:"Speilnevroner",desc:"Vi kopierer ubevisst andres energi. Den som signaliserer trygghet aktiverer samme tilstand hos den andre."},
@@ -982,7 +982,7 @@ const phases = [
       {icon:"👁",title:"Halo-effekten",desc:"Et profesjonelt uttrykk gjør at folk automatisk tilskriver deg kompetanse og troverdighet. Fremtoning er strategi."}
     ],
     belfort:"De første sekundene handler om tre ting: at du høres trygg, engasjert og kompetent ut. På telefon er stemmen og tonefallet nesten alt kunden har å gå etter. Jeg bruker dette bevisst i alle åpninger.",
-    keys:["Aldri åpne med 'hvordan har du det?', det skriker selger","Et sterkt åpningsutsagn posisjonerer deg som ekspert","Match kundens energi, men led den alltid ett hakk opp"],
+    keys:["Bekreft ærendet med en gang: 'Bilforsikring, det kan jeg absolutt hjelpe deg med.'","Ta ledelsen med ett åpent spørsmål, så kunden merker hvem som styrer samtalen","Match kundens energi, men led den alltid ett hakk opp"],
     quote:{text:"Folk kjøper ikke produkter. De kjøper versjoner av seg selv.",src:"Min tolkning: de kjøper den beste versjonen av sin egen fremtid."}
   },
   {num:"02",name:"Behovsanalyse",tag:"Intervjufasen",color:"#3D3D3D",bg:"rgba(61,61,61,.12)",
@@ -1193,10 +1193,10 @@ const SCENARIOS = [
     meta:["KLP-medlem · 49 år","Uføre + kritisk sykdom + bil + hund","Innkommende · Ca. 14 min"],
     outcome:"fast",outcomeText:"Kunden er varm inn via kollegareferral. Innbo og reise beholdes i forbundet. Selger anerkjenner dette ærlig. Bil og hund flyttes naturlig til KLP. Alt closes på én samtale.",
     phases:[
-      {name:"Åpning",intro:"Innkommende call med referral fra en kollega, bokstavelig talt, da begge er KLP-berettigede offentlig ansatte. Selger trenger ikke spørre om kunden jobber.",
+      {name:"Åpning",intro:"Innkommende call med referral fra en kollega, bokstavelig talt, da begge er KLP-berettigede offentlig ansatte.",
         lines:[{s:"S",t:"Takk for at du ringer KLP Forsikring, du snakker med Karianne. Hva kan jeg hjelpe deg med?"},{s:"K",t:"Hei, en kollega av meg fortalte om KLP og at det var veldig bra. Jeg har aldri hatt personforsikring og tenker at det er på tide å få det på plass."},{s:"S",t:"Det er veldig hyggelig å høre, og absolutt på tide. Personforsikring er noe mange utsetter lenger enn de burde. Og det er jo ikke tilfeldig at kollegaen din anbefalte oss, som KLP-medlem har du allerede tilgang til oss gjennom jobben. Kan jeg spørre litt om situasjonen din?"},{s:"K",t:"Ja, det er fint."}],
         notes:[{line:2,icon:"🏅",text:"Referralen bekreftes og kobles til KLP-tilhørigheten: 'allerede tilgang gjennom jobben'. Kunden eier dette. De aktiverer noe de allerede har."}]},
-      {name:"Behovsanalyse",intro:"Kunden er offentlig ansatt og KLP-berettiget via referralen. Selger hopper over 'jobber du i dag?' og går rett på familiesituasjon og risikoeksponering.",
+      {name:"Behovsanalyse",intro:"Kunden er offentlig ansatt og KLP-berettiget via referralen. Selger går rett på familiesituasjon og risikoeksponering.",
         lines:[{s:"S",t:"Siden kollegaen din er KLP-medlem, antar jeg at du også har pensjonsordningen gjennom jobben. Det betyr at du har et visst sikkerhetsnett, men det dekker sjelden alt ved langvarig sykdom. Har du barn, boliglån, eller andre faste utgifter du er avhengig av inntekten for å dekke?"},{s:"K",t:"Ja, tre barn og vi har boliglån på 2,8 millioner."},{s:"S",t:"Da er bildet ganske tydelig. Du har en familieøkonomi som hviler mye på at du kan jobbe. La meg spørre deg direkte: hva ville skjedd med hverdagen dersom du ble alvorlig syk i ett eller to år?"},{s:"K",t:"Det ville blitt veldig krevende. Mannen min tjener, men ikke nok til å dekke alt alene."},{s:"S",t:"Det er nøyaktig den situasjonen uføreforsikring og kritisk sykdom er laget for å løse."}],
         notes:[{line:0,icon:"🎯",text:"Selger bruker referralen aktivt til å etablere KLP-tilhørigheten uten å spørre."},{line:2,icon:"🔮",text:"Fremtidsvisualisering med et direkte spørsmål. Motivasjonssystemet aktiveres."},{line:3,icon:"💬",text:"Kunden formulerer selv risikoen. Selger behøver ikke overbevise."}]},
       {name:"Tilbud & bro",intro:"Presenter de to produktene med konkrete scenarioer. Etter positiv respons, bruk familiesituasjonen som naturlig bro til å kartlegge hele porteføljen.",
